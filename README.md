@@ -2,7 +2,8 @@
 
 ---
 
-## 🚀 Fitur Utama
+## List Fitur
+
 1. **Tampilkan direktori aktif** (Menggunakan perintah dasar `pwd`)
 2. **Tampilkan isi direktori** (Menggunakan perintah dasar `ls -F`)
 3. **Buat folder baru** (Menggunakan perintah dasar `mkdir`)
@@ -18,13 +19,20 @@
 
 ### Menggunakan Git Bash
 
-1. **Unduh & Install Git untuk Windows:**
-   * Buka browser dan unduh filenya di situs resmi [git-scm.com](https://git-scm.com/downloads).
-   * Jalankan file installer `.exe` yang sudah diunduh, klik **Next** terus sampai selesai.
-2. **Buka Git Bash:**
-   * Masuk ke folder proyekmu di Windows Explorer (misalnya `C:\Project`).
-   * Klik kanan di area kosong, lalu pilih **Git Bash Here**.
-3. **Clone Repositori & Masuk ke Folder:**
+1. **Install Gitbash:**
+   - Download installer [git-scm.com](https://git-scm.com/downloads).
+2. **Clone Repositori:**
+   - Buka dengan gitbash pada suatu directory.
+   - Clone repositori.
    ```bash
    git clone git@github.com:JustWacs/Shell-script.git
    cd Shell-script
+   ```
+3. **Buka Folder:**
+   - Masuk ke folder
+   ````bash
+   cd Shell-script
+   - Run project
+   ```bash
+   bash manajemen-file.sh
+   ````
