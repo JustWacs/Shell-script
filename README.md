@@ -1,4 +1,3 @@
-```markdown
 # Sistem Manajemen File Linux (Shell Script)
 
 ---
