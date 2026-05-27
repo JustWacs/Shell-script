@@ -30,8 +30,9 @@
    ```
 3. **Buka Folder:**
    - Masuk ke folder
-   ````bash
+   ```bash
    cd Shell-script
+   ```
    - Run project
    ```bash
    bash manajemen-file.sh
