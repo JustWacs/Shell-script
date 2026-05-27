@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# Fungsi untuk menahan tampilan agar user bisa membaca output sebelum kembali ke menu
-tekan_enter() {
+isEnterPressed() {
     echo ""
     read -p "Tekan [Enter] untuk kembali ke menu..."
 }
 
-# Loop utama program menggunakan 'while true' agar terus berjalan sampai user memilih keluar
 while true; do
     clear
     echo "========================================="
@@ -28,12 +26,12 @@ while true; do
         1)
             echo "--- Direktori Aktif Saat Ini ---"
             pwd
-            tekan_enter
+            isEnterPressed
             ;;
         2)
             echo "--- Isi Direktori Saat Ini ---"
             ls -F
-            tekan_enter
+            isEnterPressed
             ;;
         3)
             echo "--- Buat Folder Baru ---"
@@ -43,7 +41,7 @@ while true; do
             else
                 mkdir "$nama_folder" && echo "Folder '$nama_folder' berhasil dibuat." || echo "Gagal membuat folder."
             fi
-            tekan_enter
+            isEnterPressed
             ;;
         4)
             echo "--- Buat File Baru ---"
@@ -53,7 +51,7 @@ while true; do
             else
                 touch "$nama_file" && echo "File '$nama_file' berhasil dibuat." || echo "Gagal membuat file."
             fi
-            tekan_enter
+            isEnterPressed
             ;;
         5)
             echo "--- Salin File ---"
@@ -64,7 +62,7 @@ while true; do
             else
                 echo "File sumber '$file_sumber' tidak ditemukan!"
             fi
-            tekan_enter
+            isEnterPressed
             ;;
         6)
             echo "--- Pindah / Rename File ---"
@@ -75,7 +73,7 @@ while true; do
             else
                 echo "File atau folder asal tidak ditemukan!"
             fi
-            tekan_enter
+            isEnterPressed
             ;;
         7)
             echo "--- Hapus File / Folder ---"
@@ -100,7 +98,7 @@ while true; do
             else
                 echo "Pilihan tidak valid."
             fi
-            tekan_enter
+            isEnterPressed
             ;;
         8)
             echo "Terima kasih telah menggunakan sistem manajemen file Linux. Sampai jumpa!"
@@ -108,7 +106,7 @@ while true; do
             ;;
         *)
             echo "Pilihan tidak valid! Silakan pilih menu 1 sampai 8."
-            tekan_enter
+            isEnterPressed
             ;;
     esac
 done
